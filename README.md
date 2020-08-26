@@ -13,6 +13,6 @@ The goal is to use NoSQL database to storage data. This allows us to make a grea
 
 ### References
 
-- [# Using MongoDB .NET Driver with .NET Core WebAPI]([https://qappdesign.com/code/using-mongodb-with-net-core-webapi/#:~:text=The%20ASP.NET%20Core%20Web,great%20backend%20for%20Web%20APIs.](https://qappdesign.com/code/using-mongodb-with-net-core-webapi/#:~:text=The%20ASP.NET%20Core%20Web,great%20backend%20for%20Web%20APIs.))
+- [# Using MongoDB .NET Driver with .NET Core WebAPI](https://qappdesign.com/code/using-mongodb-with-net-core-webapi/#:~:text=The%20ASP.NET%20Core%20Web,great%20backend%20for%20Web%20APIs.)
 
 > Written with [StackEdit](https://stackedit.io/).
