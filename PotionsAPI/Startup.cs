@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using PotionsAPI.Models;
+using PotionsAPI.Models.Interfaces;
+using PotionsAPI.Repositories;
 
 namespace PotionsAPI
 {
@@ -26,6 +29,15 @@ namespace PotionsAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.Configure<Settings>(options =>
+            {
+                options.ConnectionString
+                    = Configuration.GetSection("MongoConnection:ConnectionString").Value;
+                options.Database
+                    = Configuration.GetSection("MongoConnection:Database").Value;
+            });
+
+            services.AddTransient<IPotionRepository, PotionRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
