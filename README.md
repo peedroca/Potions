@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/43295412/91362307-98bda280-e7d0-11ea-912e-562b12017e36.png" />
+</p>
+
+![image](https://img.shields.io/github/license/Peedroca/Potions?style=for-the-badge)
+![image](https://img.shields.io/github/issues/peedroca/potions?style=for-the-badge)
+![image](https://img.shields.io/github/v/release/peedroca/potions?style=for-the-badge)
+
+---
+
 ### Potions API
 
 The Potions API is a REST API to manage information about yours potions, including ingredients, prepare mode, images that help make your potions, and another information that you want.
