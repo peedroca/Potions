@@ -33,6 +33,21 @@ namespace PotionsAPI.Domain.Entities
         public string Description { get; set; } = string.Empty;
 
         /// <summary>
+        /// Ingredientes
+        /// </summary>
+        public string Ingredients { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Modo de Preparo
+        /// </summary>
+        public string PrepareMode { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Imagens da poção
+        /// </summary>
+        public IEnumerable<PotionImageEntity> PotionImage { get; set; } = new List<PotionImageEntity>();
+
+        /// <summary>
         /// Data de atualização
         /// BsonDateTimeOptions permite salvar com a data e hora UTC.
         /// </summary>

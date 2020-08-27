@@ -29,6 +29,21 @@
             Descrição
             </summary>
         </member>
+        <member name="P:PotionsAPI.Domain.Entities.PotionEntity.Ingredients">
+            <summary>
+            Ingredientes
+            </summary>
+        </member>
+        <member name="P:PotionsAPI.Domain.Entities.PotionEntity.PrepareMode">
+            <summary>
+            Modo de Preparo
+            </summary>
+        </member>
+        <member name="P:PotionsAPI.Domain.Entities.PotionEntity.PotionImage">
+            <summary>
+            Imagens da poção
+            </summary>
+        </member>
         <member name="P:PotionsAPI.Domain.Entities.PotionEntity.UpdatedOn">
             <summary>
             Data de atualização
@@ -39,6 +54,21 @@
             <summary>
             Data de criação
             BsonDateTimeOptions permite salvar com a data e hora UTC.
+            </summary>
+        </member>
+        <member name="T:PotionsAPI.Domain.Entities.PotionImageEntity">
+            <summary>
+            Imagem da Poção
+            </summary>
+        </member>
+        <member name="P:PotionsAPI.Domain.Entities.PotionImageEntity.InternalId">
+            <summary>
+            Identificação interna do Mongo DB
+            </summary>
+        </member>
+        <member name="P:PotionsAPI.Domain.Entities.PotionImageEntity.Url">
+            <summary>
+            URL
             </summary>
         </member>
         <member name="T:PotionsAPI.Domain.Interfaces.IPotionRepository">

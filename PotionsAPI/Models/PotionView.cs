@@ -24,5 +24,20 @@ namespace PotionsAPI.Models
         /// Descrição
         /// </summary>
         public string Description { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Ingredientes
+        /// </summary>
+        public string Ingredients { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Modo de Preparo
+        /// </summary>
+        public string PrepareMode { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Imagens da poção
+        /// </summary>
+        public IEnumerable<PotionImageView> PotionImage { get; set; } = new List<PotionImageView>();
     }
 }
