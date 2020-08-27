@@ -2,9 +2,9 @@
   <img src="https://user-images.githubusercontent.com/43295412/91362307-98bda280-e7d0-11ea-912e-562b12017e36.png" />
 </p>
 
-![image](https://img.shields.io/github/license/Peedroca/Potions?style=for-the-badge)
-![image](https://img.shields.io/github/issues/peedroca/potions?style=for-the-badge)
-![image](https://img.shields.io/github/v/release/peedroca/potions?style=for-the-badge)
+![License](https://img.shields.io/github/license/Peedroca/Potions?style=for-the-badge)
+![Questions](https://img.shields.io/github/issues/peedroca/potions?style=for-the-badge)
+![Version](https://img.shields.io/github/v/release/peedroca/potions?style=for-the-badge)
 
 ---
 
