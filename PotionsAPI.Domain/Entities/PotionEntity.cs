@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using MongoDB.Bson;
+﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace PotionsAPI.Models
+namespace PotionsAPI.Domain.Entities
 {
     /// <summary>
     /// Poção
     /// </summary>
-    public class Potion
+    public class PotionEntity
     {
         /// <summary>
         /// Identificação interna do Mongo DB
@@ -39,5 +38,12 @@ namespace PotionsAPI.Models
         /// </summary>
         [BsonDateTimeOptions]
         public DateTime UpdatedOn { get; set; } = DateTime.Now;
+
+        /// <summary>
+        /// Data de criação
+        /// BsonDateTimeOptions permite salvar com a data e hora UTC.
+        /// </summary>
+        [BsonDateTimeOptions]
+        public DateTime CreatedOn { get; set; } = DateTime.Now;
     }
 }

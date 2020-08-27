@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PotionsAPI.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:PotionsAPI.Domain.Entities.PotionEntity">
+            <summary>
+            Poção
+            </summary>
+        </member>
+        <member name="P:PotionsAPI.Domain.Entities.PotionEntity.InternalId">
+            <summary>
+            Identificação interna do Mongo DB
+            </summary>
+        </member>
+        <member name="P:PotionsAPI.Domain.Entities.PotionEntity.Id">
+            <summary>
+            Identificação
+            </summary>
+        </member>
+        <member name="P:PotionsAPI.Domain.Entities.PotionEntity.Name">
+            <summary>
+            Nome da poção
+            </summary>
+        </member>
+        <member name="P:PotionsAPI.Domain.Entities.PotionEntity.Description">
+            <summary>
+            Descrição
+            </summary>
+        </member>
+        <member name="P:PotionsAPI.Domain.Entities.PotionEntity.UpdatedOn">
+            <summary>
+            Data de atualização
+            BsonDateTimeOptions permite salvar com a data e hora UTC.
+            </summary>
+        </member>
+        <member name="P:PotionsAPI.Domain.Entities.PotionEntity.CreatedOn">
+            <summary>
+            Data de criação
+            BsonDateTimeOptions permite salvar com a data e hora UTC.
+            </summary>
+        </member>
+        <member name="T:PotionsAPI.Domain.Interfaces.IPotionRepository">
+            <summary>
+            Interface do repositório de poções
+            </summary>
+        </member>
+        <member name="M:PotionsAPI.Domain.Interfaces.IPotionRepository.AddPotion(PotionsAPI.Domain.Entities.PotionEntity)">
+            <summary>
+            Adiciona uma nova poção
+            </summary>
+            <param name="item">Poção que será adicionada</param>
+            <returns></returns>
+        </member>
+        <member name="M:PotionsAPI.Domain.Interfaces.IPotionRepository.GetAllPotions">
+            <summary>
+            Listar todas as poções
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PotionsAPI.Domain.Models.Settings">
+            <summary>
+            Configurações
+            </summary>
+        </member>
+        <member name="F:PotionsAPI.Domain.Models.Settings.ConnectionString">
+            <summary>
+            String de conexão
+            </summary>
+        </member>
+        <member name="F:PotionsAPI.Domain.Models.Settings.Database">
+            <summary>
+            Nome do banco de dados
+            </summary>
+        </member>
+    </members>
+</doc>

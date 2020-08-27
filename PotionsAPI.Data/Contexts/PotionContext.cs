@@ -1,17 +1,24 @@
 ﻿using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using PotionsAPI.Models;
+using PotionsAPI.Domain.Entities;
+using PotionsAPI.Domain.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace PotionsAPI.Contexts
+namespace PotionsAPI.Data.Contexts
 {
+    /// <summary>
+    /// Contexto de Poções
+    /// </summary>
     public class PotionContext
     {
         private readonly IMongoDatabase _database = null;
 
+        /// <summary>
+        /// Construtor
+        /// </summary>
+        /// <param name="settings"></param>
         public PotionContext(IOptions<Settings> settings)
         {
             var client = new MongoClient(settings.Value.ConnectionString);
@@ -19,11 +26,14 @@ namespace PotionsAPI.Contexts
                 _database = client.GetDatabase(settings.Value.Database);
         }
 
-        public IMongoCollection<Potion> Potions
+        /// <summary>
+        /// Poções
+        /// </summary>
+        public IMongoCollection<PotionEntity> Potions
         {
             get
             {
-                return _database.GetCollection<Potion>("Potion");
+                return _database.GetCollection<PotionEntity>("Potion");
             }
         }
     }

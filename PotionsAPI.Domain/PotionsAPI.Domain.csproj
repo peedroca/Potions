@@ -11,7 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MongoDB.Driver.Core" Version="2.11.1" />
+    <PackageReference Include="MongoDB.Bson" Version="2.11.1" />
   </ItemGroup>
 
 </Project>

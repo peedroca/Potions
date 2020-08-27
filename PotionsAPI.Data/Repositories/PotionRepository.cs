@@ -1,25 +1,37 @@
 ﻿using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using PotionsAPI.Contexts;
-using PotionsAPI.Models;
-using PotionsAPI.Models.Interfaces;
+using PotionsAPI.Data.Contexts;
+using PotionsAPI.Domain.Entities;
+using PotionsAPI.Domain.Interfaces;
+using PotionsAPI.Domain.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
-namespace PotionsAPI.Repositories
+namespace PotionsAPI.Data.Repositories
 {
+    /// <summary>
+    /// Repositório de Poções
+    /// </summary>
     public class PotionRepository : IPotionRepository
     {
         private readonly PotionContext _context = null;
 
+        /// <summary>
+        /// Construtor
+        /// </summary>
+        /// <param name="settings"></param>
         public PotionRepository(IOptions<Settings> settings)
         {
             _context = new PotionContext(settings);
         }
 
-        public async Task AddPotion(Potion item)
+        /// <summary>
+        /// Adiciona uma nova poção
+        /// </summary>
+        /// <param name="item">Poção que será adicionada</param>
+        /// <returns></returns>
+        public async Task AddPotion(PotionEntity item)
         {
             try
             {
@@ -31,7 +43,11 @@ namespace PotionsAPI.Repositories
             }
         }
 
-        public async Task<IEnumerable<Potion>> GetAllPotions()
+        /// <summary>
+        /// Listar todas as poções
+        /// </summary>
+        /// <returns></returns>
+        public async Task<IEnumerable<PotionEntity>> GetAllPotions()
         {
             try
             {

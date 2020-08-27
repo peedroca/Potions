@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PotionsAPI.Data</name>
+    </assembly>
+    <members>
+        <member name="T:PotionsAPI.Data.Contexts.PotionContext">
+            <summary>
+            Contexto de Poções
+            </summary>
+        </member>
+        <member name="M:PotionsAPI.Data.Contexts.PotionContext.#ctor(Microsoft.Extensions.Options.IOptions{PotionsAPI.Domain.Models.Settings})">
+            <summary>
+            Construtor
+            </summary>
+            <param name="settings"></param>
+        </member>
+        <member name="P:PotionsAPI.Data.Contexts.PotionContext.Potions">
+            <summary>
+            Poções
+            </summary>
+        </member>
+        <member name="T:PotionsAPI.Data.Repositories.PotionRepository">
+            <summary>
+            Repositório de Poções
+            </summary>
+        </member>
+        <member name="M:PotionsAPI.Data.Repositories.PotionRepository.#ctor(Microsoft.Extensions.Options.IOptions{PotionsAPI.Domain.Models.Settings})">
+            <summary>
+            Construtor
+            </summary>
+            <param name="settings"></param>
+        </member>
+        <member name="M:PotionsAPI.Data.Repositories.PotionRepository.AddPotion(PotionsAPI.Domain.Entities.PotionEntity)">
+            <summary>
+            Adiciona uma nova poção
+            </summary>
+            <param name="item">Poção que será adicionada</param>
+            <returns></returns>
+        </member>
+        <member name="M:PotionsAPI.Data.Repositories.PotionRepository.GetAllPotions">
+            <summary>
+            Listar todas as poções
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PotionsAPI", "PotionsAPI.csproj", "{3D166827-9658-4178-BF66-516BD424A47C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PotionsAPI.Data", "..\PotionsAPI.Data\PotionsAPI.Data.csproj", "{3DB8706D-E6B5-449D-BA7C-FC22C0154CA5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PotionsAPI.Domain", "..\PotionsAPI.Domain\PotionsAPI.Domain.csproj", "{A77D1AF8-3720-4594-9EE0-D782E69FE6F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{3D166827-9658-4178-BF66-516BD424A47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D166827-9658-4178-BF66-516BD424A47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D166827-9658-4178-BF66-516BD424A47C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB8706D-E6B5-449D-BA7C-FC22C0154CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB8706D-E6B5-449D-BA7C-FC22C0154CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB8706D-E6B5-449D-BA7C-FC22C0154CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB8706D-E6B5-449D-BA7C-FC22C0154CA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A77D1AF8-3720-4594-9EE0-D782E69FE6F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A77D1AF8-3720-4594-9EE0-D782E69FE6F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A77D1AF8-3720-4594-9EE0-D782E69FE6F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A77D1AF8-3720-4594-9EE0-D782E69FE6F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

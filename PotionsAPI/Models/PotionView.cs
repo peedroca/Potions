@@ -8,7 +8,7 @@ namespace PotionsAPI.Models
     /// <summary>
     /// Parâmetros de Poções
     /// </summary>
-    public class PotionParam
+    public class PotionView
     {
         /// <summary>
         /// Identificação

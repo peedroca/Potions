@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using PotionsAPI.Domain.Entities;
+using PotionsAPI.Domain.Interfaces;
 using PotionsAPI.Models;
-using PotionsAPI.Models.Interfaces;
 
 namespace PotionsAPI.Controllers
 {
@@ -14,29 +14,26 @@ namespace PotionsAPI.Controllers
     [ApiController]
     public class PotionsController : ControllerBase
     {
-        private readonly IPotionRepository _potionRepository;
+        private readonly IPotionRepository potionRepository;
+        private readonly IMapper mapper;
 
-        public PotionsController(IPotionRepository potionRepository)
+        public PotionsController(IMapper mapper, IPotionRepository potionRepository)
         {
-            _potionRepository = potionRepository;
+            this.potionRepository = potionRepository;
+            this.mapper = mapper;
         }
 
         [HttpGet]
-        public async Task<IEnumerable<Potion>> Get()
+        public async Task<IEnumerable<PotionView>> Get()
         {
-            return await _potionRepository.GetAllPotions();
+            var potions = await potionRepository.GetAllPotions();
+            return mapper.Map<IEnumerable<PotionView>>(potions);
         }
 
         [HttpPost]
-        public void Post([FromBody] PotionParam newPotion)
+        public void Post([FromBody] PotionView newPotion)
         {
-            _potionRepository.AddPotion(new Potion
-            {
-                Id = newPotion.Id,
-                Description = newPotion.Description,
-                UpdatedOn = DateTime.Now,
-                Name = newPotion.Name
-            });
+            potionRepository.AddPotion(mapper.Map<PotionEntity>(newPotion));
         }
     }
 }

@@ -5,8 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MongoDB.Driver" Version="2.11.1" />
-    <PackageReference Include="MongoDB.Driver.Core" Version="2.11.1" />
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PotionsAPI.Data\PotionsAPI.Data.csproj" />
+    <ProjectReference Include="..\PotionsAPI.Domain\PotionsAPI.Domain.csproj" />
   </ItemGroup>
 
 
